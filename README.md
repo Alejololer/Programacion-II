@@ -13,9 +13,11 @@ El óvalo sirve para demostrar el inicio, el trapezoide la entrada el usuario, e
         public static void main(){
             int a=20,b=10;
             if(a>b){
-                system.out.print("a es el numero mayor");
+                System.out.print("a es el numero mayor");
+            } else if(a=b){
+                System.out.print("Son iguales");
             } else{
-                system.out.print("b es el numero mayor");
+                System.ot.print("b es el numero mayor");
             }
         }
 ```
@@ -25,3 +27,4 @@ Realizando todo este proceso acompañado el tracing, creando tablas de tabulaci�
 Un error es algo fatal, que causa que el programa se cierre totalmente.
 Un bug es un hueco que se aprovecha de una función o procedimiento mal diseñada para causar problemas en el programa.
 Un issue es un problema no tan fatal que a pesar de dañar el programa sigue funcionando.
+

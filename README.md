@@ -14,7 +14,7 @@ El óvalo sirve para demostrar el inicio, el trapezoide la entrada el usuario, e
             int a=20,b=10;
             if(a>b){
                 System.out.print("a es el numero mayor");
-            } else if(a=b){
+            } else if(a==b){
                 System.out.print("Son iguales");
             } else{
                 System.ot.print("b es el numero mayor");

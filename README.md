@@ -28,3 +28,20 @@ Un error es algo fatal, que causa que el programa se cierre totalmente.
 Un bug es un hueco que se aprovecha de una función o procedimiento mal diseñada para causar problemas en el programa.
 Un issue es un problema no tan fatal que a pesar de dañar el programa sigue funcionando.
 
+### 7.12.2022
+Sobrecarga
+```java
+    private static int suma(int a,int f){
+        return a+f;
+    }
+    private static float suma(int a,float f){
+        return a+f;
+    }
+    private static float suma(float a,float f){
+        return a+f;
+    }
+    private static float suma(float a,int f){
+        return a+f;
+    }
+```
+

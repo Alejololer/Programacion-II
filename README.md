@@ -44,4 +44,15 @@ Sobrecarga
         return a+f;
     }
 ```
+## Programación orientada a objetos
+Tenes uno clase, que al usar New se crea una nueva instancia
+entonces, los objetos se crean en la memoria ram.
+
+En Public Class Name tenemos un ámbito, un método y una
+propiedad.
+
+En ámbitos podemos tener:
+-public
+-private 
+-protect/friend
 

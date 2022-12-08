@@ -57,5 +57,9 @@ En ámbitos podemos tener:
 -protect/friend
 >Ejemplo
 ```java
-    public class persona(){
-        public int a;
+    public class CreditCard{
+        Protect String nrotar;
+        Public String nombprop;
+        public boolean retirar(string code){
+            return true;
+        }

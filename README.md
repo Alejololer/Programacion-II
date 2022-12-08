@@ -55,4 +55,7 @@ En ámbitos podemos tener:
 -public
 -private 
 -protect/friend
-
+>Ejemplo
+```java
+    public class persona(){
+        public int a;

@@ -63,3 +63,28 @@ En ámbitos podemos tener:
         public boolean retirar(string code){
             return true;
         }
+    }
+```
+### Herencia
+Es el proceso donde una superclase comparte sus atributos y metodos a una subclase, siendo un ejemplo:
+
+```java
+    public class Padre{
+        Private String nombre;
+        Private Int edad;
+        public void dormir(){
+        }
+        public void comer(){
+        }
+    }
+```
+Si usamos la palabra "extends" en la subclase, este adquiriria los atributos y los metodos de la clase Padre.
+```java
+    public class Hijo extends Padre{
+    }
+```
+Ya poseeria nombre, edad, dormir, correr y podria utilizarlos.
+>Es importante saber que ambas clases deben estar en el mismo paquete.
+### Interface
+
+

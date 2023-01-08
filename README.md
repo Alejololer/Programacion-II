@@ -142,7 +142,7 @@ Los botones son igualmente una clase ya creada en las utilidades de Java, siendo
             JButton btnP2=new JButton("Panel 2");
         }   //fin del método main
     }   //fin de la clase Botones
-
+```
 ### Workshop
 Realizamos un trabajo grupal basado en la creación de una red social para mascotas llamada Tinder Pets, debíamos hacer que sea totalmente funcional con la capacidad de hacer matches entre mascotas, el resultado de mi grupo fue subido a github al siguiente link: https://github.com/emilioale04/TinderPetLover
 El trabajo no fue totalmente completo debido a la falta de tiempo pues nos hubiera gustado añadirle algunas features extra para que el programa se sienta completo, aún así el programa base es totalmente funcional y tiene todas las features solicitadas en el 

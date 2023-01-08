@@ -4,6 +4,7 @@
 Ciencia de estudios de los algoritmos y estos últimos nos sirven para solucionar problemas.
 Dentro de esta ciencia tenemos el pseudocódigo, los diagramas de flujo, el código y el trace junto al debug.
 > Diagramas de flujo
+![image](https://user-images.githubusercontent.com/42527062/211204207-2504aa50-d85c-4931-8fbc-2b21d80e3696.png)
 
 El óvalo sirve para demostrar el inicio, el trapezoide la entrada el usuario, el rectángulo los procedimientos, el rombo un condicional, además de otras formas para representar los mensajes al usuario, etc.
 
@@ -44,6 +45,8 @@ Sobrecarga
         return a+f;
     }
 ```
+![image](https://user-images.githubusercontent.com/42527062/211204415-4c3b38ae-3844-42af-85a6-eb931909c282.png)
+
 ## Programación orientada a objetos
 Tenemos una clase, que al usar New se crea una nueva instancia
 entonces, los objetos se crean en la memoria ram.
@@ -83,6 +86,8 @@ Si usamos la palabra "extends" en la subclase, este adquiriria los atributos y l
     public class Hijo extends Padre{
     }
 ```
+![image](https://user-images.githubusercontent.com/42527062/211204447-8efeffe1-1de3-4ef6-998d-981a3e7c2d55.png)
+
 Ya poseeria nombre, edad, dormir, correr y podria utilizarlos.
 >Es importante saber que ambas clases deben estar en el mismo paquete.
 ### Interface
@@ -100,5 +105,12 @@ Para implementarse en una clase se usa la palabra "implements".
     }
 ```
 Para realizar una herencia multiple podemos usar la jerarquia de clases.
+
+![image](https://user-images.githubusercontent.com/42527062/211204509-d6a27aec-e75c-4089-a7bd-3e6cc4732974.png)
+
 ### GUI
 En cuanto a GUI solo se va a realizar una rapida explicacion del uso de Jframe.
+
+### Workshop
+Realizamos un trabajo grupal basado en la creación de una red social para mascotas llamada Tinder Pets, debíamos hacer que sea totalmente funcional con la capacidad de hacer matches entre mascotas, el resultado de mi grupo fue subido a github al siguiente link: https://github.com/emilioale04/TinderPetLover
+El trabajo no fue totalmente completo debido a la falta de tiempo pues nos hubiera gustado añadirle algunas features extra para que el programa se sienta completo, aún así el programa base es totalmente funcional y tiene todas las features solicitadas en el 

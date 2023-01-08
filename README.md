@@ -86,5 +86,19 @@ Si usamos la palabra "extends" en la subclase, este adquiriria los atributos y l
 Ya poseeria nombre, edad, dormir, correr y podria utilizarlos.
 >Es importante saber que ambas clases deben estar en el mismo paquete.
 ### Interface
+Es una manera de compartir y crear una especie de plantilla para clases, se declara de la manera:
+
+```java
+    public interface EjemploInterfaz(){
+    //Cuerpo de la interfaz
+    }
+```
+Para implementarse en una clase se usa la palabra "implements".
+```java
+    public class Ejemplo implements EjemploInterfaz(){
+    //Cuerpo de la clase
+    }
+```
+Para realizar una herencia multiple podemos usar la jerarquia de clases.
 
 

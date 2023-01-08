@@ -4,7 +4,8 @@
 Ciencia de estudios de los algoritmos y estos últimos nos sirven para solucionar problemas.
 Dentro de esta ciencia tenemos el pseudocódigo, los diagramas de flujo, el código y el trace junto al debug.
 > Diagramas de flujo
-<img src="[https://your-image-url.type](https://user-images.githubusercontent.com/42527062/211204207-2504aa50-d85c-4931-8fbc-2b21d80e3696.png)" width="100" height="100">
+<img src=="[https://your-image-url.type](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/LampFlowchart_es.svg/1200px-LampFlowchart_es.svg.png)" width="100">
+
 
 El óvalo sirve para demostrar el inicio, el trapezoide la entrada el usuario, el rectángulo los procedimientos, el rombo un condicional, además de otras formas para representar los mensajes al usuario, etc.
 

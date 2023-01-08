@@ -100,5 +100,5 @@ Para implementarse en una clase se usa la palabra "implements".
     }
 ```
 Para realizar una herencia multiple podemos usar la jerarquia de clases.
-
-
+### GUI
+En cuanto a GUI solo se va a realizar una rapida explicacion del uso de Jframe.

@@ -110,7 +110,38 @@ Para realizar una herencia multiple podemos usar la jerarquia de clases.
 ![image](https://user-images.githubusercontent.com/42527062/211204509-d6a27aec-e75c-4089-a7bd-3e6cc4732974.png)
 
 ### GUI
-En cuanto a GUI solo se va a realizar una rapida explicacion del uso de Jframe.
+En cuanto a GUI solo se va a realizar una rapida explicacion del uso de Jframe, este es una clase de una utilidad de Java para poder crear y modificar las propiedades de una ventana.
+
+```java
+    import javax.swing.*;
+    public class Ventana
+    {
+        public static void main( String[] args ) 
+        {
+            JFrame miVentana = new JFrame( "Mi Ventana" );
+            miVentana.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE);
+            miVentana.setSize( 300, 200 );
+            miVentana.setVisible( true );
+            
+            ImageIcon image=new ImageIcon("logo.png");
+            frm.setIconImage(image.getImage());
+            frm.getContentPanel().setBackground(new Color(12,111,54);
+            
+        }   //fin del método main
+    }   //fin de la clase ventana
+```
+Los botones son igualmente una clase ya creada en las utilidades de Java, siendo la clase JButton.
+
+```java
+    public class Botones
+    {
+        public static void main( String[] args ) 
+        {
+            JButton btnP1=new JButton("Panel 1");
+            JButton btnP2=new JButton("Panel 2");
+            JButton btnP2=new JButton("Panel 2");
+        }   //fin del método main
+    }   //fin de la clase Botones
 
 ### Workshop
 Realizamos un trabajo grupal basado en la creación de una red social para mascotas llamada Tinder Pets, debíamos hacer que sea totalmente funcional con la capacidad de hacer matches entre mascotas, el resultado de mi grupo fue subido a github al siguiente link: https://github.com/emilioale04/TinderPetLover

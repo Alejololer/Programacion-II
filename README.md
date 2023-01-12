@@ -49,6 +49,8 @@ Sobrecarga
 ![image](https://user-images.githubusercontent.com/42527062/211204415-4c3b38ae-3844-42af-85a6-eb931909c282.png)
 
 ## Programación orientada a objetos
+
+### Clases
 Tenemos una clase, que al usar New se crea una nueva instancia
 entonces, los objetos se crean en la memoria ram.
 
@@ -59,6 +61,9 @@ En ámbitos podemos tener:
 -public
 -private 
 -protect/friend
+
+Tambien podemos declararles metodos a las clases, donde realizaran acciones.
+
 >Ejemplo
 ```java
     public class CreditCard{
@@ -67,8 +72,25 @@ En ámbitos podemos tener:
         public boolean retirar(string code){
             return true;
         }
+        public void usar(){
+        }
+        public void cancelar(){
+        }
     }
 ```
+
+### Paquetes
+Podemos crear paquetes donde almacenamos varias clases, para esto se deberá crear una una carpeta con el mismo nombre del paquete que crearemos y todas las clases creadas dentro del paquete deberán tener la siguiente linea al inicio de su archivo.
+```java
+package <nombrePaquete>
+    //Cuerpo de la clase
+```
+Para importar paquetes a nuestros trabajos usamos el prefijo import seguido del nombre del paquete, seguido de un punto y un asterisco si queremos importar todas las clases del paquete o un punto y el nombre de la clase a importarse.
+```java
+import <nombrePaquete>.<nombreClase o *>
+    //Cuerpo del programa
+```
+
 ### Herencia
 Es el proceso donde una superclase comparte sus atributos y metodos a una subclase, siendo un ejemplo:
 
@@ -76,6 +98,10 @@ Es el proceso donde una superclase comparte sus atributos y metodos a una subcla
     public class Padre{
         Private String nombre;
         Private Int edad;
+        Padre(String nombre, int edad){
+            this.nombre=nombre;
+            this.edad=edad;
+        )
         public void dormir(){
         }
         public void comer(){
@@ -90,7 +116,15 @@ Si usamos la palabra "extends" en la subclase, este adquiriria los atributos y l
 ![image](https://user-images.githubusercontent.com/42527062/211204447-8efeffe1-1de3-4ef6-998d-981a3e7c2d55.png)
 
 Ya poseeria nombre, edad, dormir, correr y podria utilizarlos.
->Es importante saber que ambas clases deben estar en el mismo paquete.
+>Es importante saber que ambas clases deben estar en el mismo paquete y que el constructor de la superclase se incluya en la subclase por medio de la denotacion super.
+```java
+    public class Hijo extends Padre{
+        Hijo(String nombre, int edad){
+            super(String nombre, int edad)
+        }
+    }
+```
+
 ### Interface
 Es una manera de compartir y crear una especie de plantilla para clases, se declara de la manera:
 
@@ -108,6 +142,10 @@ Para implementarse en una clase se usa la palabra "implements".
 Para realizar una herencia multiple podemos usar la jerarquia de clases.
 
 ![image](https://user-images.githubusercontent.com/42527062/211204509-d6a27aec-e75c-4089-a7bd-3e6cc4732974.png)
+
+### Diagramas
+En cuanto a diagramas tenemos los dos diagramas principales, el de clases y el de usos.
+#### Diagrama de clases
 
 ### GUI
 En cuanto a GUI solo se va a realizar una rapida explicacion del uso de Jframe, este es una clase de una utilidad de Java para poder crear y modificar las propiedades de una ventana.

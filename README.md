@@ -144,8 +144,17 @@ Para realizar una herencia multiple podemos usar la jerarquia de clases.
 ![image](https://user-images.githubusercontent.com/42527062/211204509-d6a27aec-e75c-4089-a7bd-3e6cc4732974.png)
 
 ### Diagramas
-En cuanto a diagramas tenemos los dos diagramas principales, el de clases y el de usos.
+En cuanto a diagramas tenemos los dos diagramas principales, el de clases y el de casos de uso.
 #### Diagrama de clases
+Es un diagrama donde mostramos todas las clases y las relaciones entre clases de nuestro programa.
+![image](https://user-images.githubusercontent.com/42527062/212127910-e6bb2762-7641-495b-8654-6aadf0253161.png)
+>El significado de cada señalizacion usada en el diagrama se muestra a continuacion.
+![image](https://user-images.githubusercontent.com/42527062/212128563-54dc1391-83b3-44c0-ae92-7614a24b5d85.png)
+#### Diagrama de casos de uso
+Es un diagrama donde buscamos representar todos los casos de uso que el usuario o un administrador realizaria en el programa.
+>A continuacion un ejemplo sencillo de un diagrama de casos de uso para un sistema de una tienda.
+![image](https://user-images.githubusercontent.com/42527062/212129022-50c5995e-7d4d-4064-810c-e3f5d3a42c54.png)
+
 
 ### GUI
 En cuanto a GUI solo se va a realizar una rapida explicacion del uso de Jframe, este es una clase de una utilidad de Java para poder crear y modificar las propiedades de una ventana.
@@ -183,4 +192,4 @@ Los botones son igualmente una clase ya creada en las utilidades de Java, siendo
 ```
 ### Workshop
 Realizamos un trabajo grupal basado en la creación de una red social para mascotas llamada Tinder Pets, debíamos hacer que sea totalmente funcional con la capacidad de hacer matches entre mascotas, el resultado de mi grupo fue subido a github al siguiente link: https://github.com/emilioale04/TinderPetLover
-El trabajo no fue totalmente completo debido a la falta de tiempo pues nos hubiera gustado añadirle algunas features extra para que el programa se sienta completo, aún así el programa base es totalmente funcional y tiene todas las features solicitadas en el 
+El trabajo no fue totalmente completo debido a la falta de tiempo pues nos hubiera gustado añadirle algunas features extra para que el programa se sienta completo, aún así el programa base es totalmente funcional y tiene todas las features solicitadas en el esquema de calificacion.

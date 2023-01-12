@@ -190,6 +190,11 @@ Los botones son igualmente una clase ya creada en las utilidades de Java, siendo
         }   //fin del método main
     }   //fin de la clase Botones
 ```
+>Un ejemplo de una ventana generada con Java swing.
+>![image](https://user-images.githubusercontent.com/42527062/212143303-201e8126-99e8-49eb-b767-06a0466d80a8.png)
+
+
+
 ### Workshop
 Realizamos un trabajo grupal basado en la creación de una red social para mascotas llamada Tinder Pets, debíamos hacer que sea totalmente funcional con la capacidad de hacer matches entre mascotas, el resultado de mi grupo fue subido a github al siguiente link: https://github.com/emilioale04/TinderPetLover
 El trabajo no fue totalmente completo debido a la falta de tiempo pues nos hubiera gustado añadirle algunas features extra para que el programa se sienta completo, aún así el programa base es totalmente funcional y tiene todas las features solicitadas en el esquema de calificacion.

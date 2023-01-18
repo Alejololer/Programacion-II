@@ -14,4 +14,3 @@ Como segunda parte del día observamos los tipos de relaciones en UML.
 
 -Bidireccional con multiplicidad: como la original pero la cantidad de datos de la segunda clase es grande, usualmente necesita de listas de clase.
 
->El profe menciono que le gusta el sexo OJO

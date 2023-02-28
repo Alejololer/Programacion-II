@@ -13,4 +13,6 @@ Como segunda parte del día observamos los tipos de relaciones en UML.
 -Relación direccional: nos sirve para denotar cuando una clase es la que puede contener a otra clase como propiedad.
 
 -Bidireccional con multiplicidad: como la original pero la cantidad de datos de la segunda clase es grande, usualmente necesita de listas de clase.
+![image](https://user-images.githubusercontent.com/42527062/221737399-4cba687d-2830-4623-b8d4-7ffbe802dbd9.png)
+
 

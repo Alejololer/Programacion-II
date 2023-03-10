@@ -292,3 +292,80 @@ int main( void)
     }while (true);
 }
 ```
+> A este codigo se lo tradujo a Java y se le aumento estados y entradas.
+```java
+import java.util.Scanner;
+
+public class App {
+    public static final int TKFin2 = -3;    //papas exacto
+    public static final int TKFin = -2;     //cola exacto
+    public static final int TKErr = -1;     //falta de dinero
+    public static final String ALFA[]={"5","10","25","50","s","\\t"};
+    public static void main(String[] args) throws Exception {
+        int[][] mt= new int[21][5];
+        mt[0][0]= 1;     mt[0][1]= 2;      mt[0][2]= 5; 	mt[0][3]= 10;    mt[0][4]= TKErr;
+        mt[1][0]= 2;     mt[1][1]= 3;      mt[1][2]= 6;     mt[1][3]= 11;    mt[1][4]= TKErr;
+        mt[2][0]= 3;     mt[2][1]= 4;      mt[2][2]= 7;     mt[2][3]= 12;    mt[2][4]= TKErr;
+        mt[3][0]= 4;     mt[3][1]= 5;      mt[3][2]= 8;     mt[3][3]= 13;    mt[3][4]= TKErr;
+        mt[4][0]= 5;     mt[4][1]= 6;      mt[4][2]= 9;     mt[4][3]= 14;    mt[4][4]= TKErr;
+        mt[5][0]= 6;     mt[5][1]= 7;      mt[5][2]= 10;    mt[5][3]= 15;    mt[5][4]= TKErr;
+        mt[6][0]= 7;     mt[6][1]= 8;      mt[6][2]= 11;    mt[6][3]= 16;    mt[6][4]= TKErr;
+        mt[7][0]= 8;     mt[7][1]= 9;      mt[7][2]= 12;    mt[7][3]= 17;    mt[7][4]= TKErr;
+        mt[8][0]= 9;     mt[8][1]= 10;     mt[8][2]= 13;    mt[8][3]= 18;    mt[8][4]= TKErr;
+        mt[9][0]= 10;    mt[9][1]= 11;     mt[9][2]= 14;    mt[9][3]= 19;    mt[9][4]= TKErr;
+        mt[10][0]= 11;   mt[10][1]= 12;    mt[10][2]= 15;   mt[10][3]= 20;   mt[10][4]= TKFin2;
+        mt[11][0]= 12;   mt[11][1]= 13;    mt[11][2]= 16;   mt[11][3]= 20;  mt[11][4]= TKErr;
+        mt[12][0]= 13;   mt[12][1]= 14;    mt[12][2]= 17;   mt[12][3]= 20;  mt[12][4]= TKErr;
+        mt[13][0]= 14;   mt[13][1]= 15;    mt[13][2]= 18;   mt[13][3]= 20;  mt[13][4]= TKErr;
+        mt[14][0]= 15;   mt[14][1]= 16;    mt[14][2]= 19;   mt[14][3]= 20;  mt[14][4]= TKErr;
+        mt[15][0]= 16;   mt[15][1]= 17;    mt[15][2]= 20;   mt[15][3]= 20;  mt[15][4]= TKErr;
+        mt[16][0]= 17;   mt[16][1]= 18;    mt[16][2]= 20;   mt[16][3]= 20;  mt[16][4]= TKErr;
+        mt[17][0]= 18;   mt[17][1]= 19;    mt[17][2]= 20;   mt[17][3]= 20;  mt[17][4]= TKErr;
+        mt[18][0]= 19;   mt[18][1]= 20;    mt[18][2]= 20;   mt[18][3]= 20;  mt[18][4]= TKErr;
+        mt[19][0]= 20;   mt[19][1]= 20;    mt[19][2]= 20;      mt[19][3]= 20;  mt[19][4]= TKErr;
+        mt[20][0]= 20;   mt[20][1]= 20;       mt[20][2]= 20;         mt[20][3]= 20;  mt[20][4]= TKFin;
+
+        int q=0,l=0;
+        String moneda;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingresa $1 o 50 centavos en monedas de 5, 10, 25 y 50 centavos. !Cuidado! La maquina NO da vuelto");
+        do{
+            System.out.println("(s para salir) >> Ingresa una moneda: ");
+            
+            moneda=sc.nextLine();
+            l=getIndexAlfabeto(moneda);
+            q=mt[q][l];
+            if(q==TKErr){
+                System.out.println("Error, inicie de nuevo");
+                System.exit(0);
+            } 
+            if(q==TKFin){
+                System.out.println("Ok, toma tu cola");
+                System.exit(1);
+            }
+            if(q==TKFin2){
+                System.out.println("Ok, toma tu papita.");
+                System.exit(1);
+            }
+        }while(true);
+    }
+
+    public static void showMatriz(int[][] pd, int f, int c){
+        for(int i=0;i<f;i++){
+            for(int j=0;j<c;j++)
+                System.out.println(pd[i][j]);
+            System.out.println();
+        }
+    }
+
+    public static int getIndexAlfabeto(String str){
+        for(int i=0;i<ALFA.length;i++)
+            if(str.equals(ALFA[i])){
+                return i; 
+            }
+        return TKErr;
+    }
+}
+```
+Con su grafo correspondiente siendo:
+![Diag](https://user-images.githubusercontent.com/42527062/224436443-aa37cda3-769d-41e2-a68b-5027597d8133.png)
